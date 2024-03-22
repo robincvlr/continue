@@ -194,6 +194,7 @@ class OpenAI extends BaseLLM {
         "Content-Type": "application/json",
         Authorization: `Bearer ${this.apiKey}`,
         "api-key": this.apiKey ?? "", // For Azure
+        "username": "", // TODO: fetch username 
       },
       body: JSON.stringify(body),
     });
